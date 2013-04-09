@@ -1,0 +1,39 @@
+*Pick And Place List
+*Company=
+*Author=
+*eMail=
+*
+*Project=BinaryClock
+*Date=12:33:26
+*CreatedBy=Fritzing 0.7.12b.02.13.6882
+*
+*
+*Coordinates in mm, always center of component
+*Origin 0/0=Lower left corner of PCB
+*Rotation in degree (0-360, math. pos.)
+*
+*No;Value;Package;X;Y;Rotation;Side;Name
+1;;;59.6388;-25.9145;0;Bottom;U1
+2;;5 mm [THT];75.8238;-35.5898;0;Bottom;LED5
+3;;5 mm [THT];85.9837;-11.3477;180;Bottom;LED18
+4;;5 mm [THT];45.3438;-24.0477;180;Bottom;LED8
+5;;5 mm [THT];35.1838;-10.1898;0;Bottom;LED13
+6;;5 mm [THT];75.8238;-10.1898;0;Bottom;LED17
+7;47;THT;14.8638;-24.7388;90;Bottom;R1
+8;;5 mm [THT];85.9837;-36.7477;180;Bottom;LED6
+9;;5 mm [THT];45.3438;-36.7477;180;Bottom;LED2
+10;;5 mm [THT];55.5038;-10.1898;0;Bottom;LED15
+11;;5 mm [THT];75.8238;-22.8898;0;Bottom;LED11
+12;;5 mm [THT];85.9837;-24.0477;180;Bottom;LED12
+13;;5 mm [THT];65.6638;-11.3477;180;Bottom;LED16
+14;47;THT;4.7038;-24.7388;90;Bottom;R5
+15;;5 mm [THT];65.6638;-36.7477;180;Bottom;LED4
+16;;5 mm [THT];55.5038;-35.5898;0;Bottom;LED3
+17;;5 mm [THT];65.6638;-24.0477;180;Bottom;LED10
+18;;5 mm [THT];35.1838;-35.5898;0;Bottom;LED1
+19;47;THT;7.2438;-24.7388;90;Bottom;R4
+20;;5 mm [THT];45.3438;-11.3477;180;Bottom;LED14
+21;;5 mm [THT];55.5038;-22.8898;0;Bottom;LED9
+22;47;THT;9.7838;-24.7388;90;Bottom;R3
+23;;5 mm [THT];35.1838;-22.8898;0;Bottom;LED7
+24;47;THT;12.3238;-24.7388;90;Bottom;R2

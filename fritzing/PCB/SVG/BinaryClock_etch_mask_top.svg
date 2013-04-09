@@ -1,0 +1,350 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!-- Created with Fritzing (http://www.fritzing.org/) -->
+<svg xmlns="http://www.w3.org/2000/svg" width="4in" x="0in" version="1.2" y="0in"  height="2.111in" viewBox="0 0 288 151.992" baseProfile="tiny" xmlns:svg="http://www.w3.org/2000/svg">
+ <g partID="309260">
+  <g  id="board">
+   <path fill="none"  stroke="black" fill-opacity="0.5" id="boardoutline" stroke-width="0.5" d="M280.63,33.9902L280.63,5.6457L274.961,0L0,0l0,151.645l282.047,0l0,-6.31567l5.67,-7.13662L287.717,41.0998L280.63,33.9902z"/>
+   <g  id="hole_11_"/>
+   <g  id="hole_10_"/>
+   <g  id="hole_9_"/>
+   <g  id="hole_8_"/>
+   <g  id="hole_7_"/>
+   <g  id="hole_6_"/>
+   <g  id="ICSP1_1_"/>
+   <g  id="ICSP2_1_"/>
+   <g  id="Header_13_"/>
+   <g  id="Header_12_"/>
+   <g  id="Header_11_"/>
+   <g  id="Header_10_"/>
+   <g  id="Header_9_"/>
+   <g  id="Header_8_"/>
+   <g  id="Header_7_"/>
+   <g  id="usbconnector_1_"/>
+  </g>
+ </g>
+ <g partID="108221">
+  <g transform="translate(45.2296,64.7664)">
+   <g transform="matrix(0,1,-1,0,0,0)">
+    <g  id="copper1">
+     <rect width="3.96" x="0.72" y="1.116" fill="black"  height="3.96" stroke="black" stroke-width="2.16"/>
+     <circle fill="black" cx="2.7"  cy="3.096" stroke="black" r="1.98" id="connector0pin" stroke-width="2.16"/>
+     <circle fill="black" cx="31.5"  cy="3.096" stroke="black" r="1.98" id="connector1pin" stroke-width="2.16"/>
+    </g>
+   </g>
+  </g>
+ </g>
+ <g partID="107311">
+  <g transform="translate(148.546,114.32)">
+   <g  id="copper1">
+    <circle fill="black" cx="8.7876"  cy="10.6336" stroke="black" id="connector1pad" r="1.7008" stroke-width="1.85384"/>
+    <rect width="3.4016" x="7.0868" y="8.9328" fill="black"  height="3.4016" stroke="black" stroke-width="1.85384"/>
+    <circle fill="black" cx="8.7876"  cy="3.5464" stroke="black" id="connector0pad" r="1.7008" stroke-width="1.85384"/>
+   </g>
+  </g>
+ </g>
+ <g partID="107231">
+  <g transform="translate(252.521,92.6128)">
+   <g transform="matrix(-1,0,0,-1,0,0)">
+    <g  id="copper1">
+     <circle fill="black" cx="8.7876"  cy="10.6336" stroke="black" id="connector1pad" r="1.7008" stroke-width="1.85384"/>
+     <rect width="3.4016" x="7.0868" y="8.9328" fill="black"  height="3.4016" stroke="black" stroke-width="1.85384"/>
+     <circle fill="black" cx="8.7876"  cy="3.5464" stroke="black" id="connector0pad" r="1.7008" stroke-width="1.85384"/>
+    </g>
+   </g>
+  </g>
+ </g>
+ <g partID="107221">
+  <g transform="translate(206.146,78.32)">
+   <g  id="copper1">
+    <circle fill="black" cx="8.7876"  cy="10.6336" stroke="black" id="connector1pad" r="1.7008" stroke-width="1.85384"/>
+    <rect width="3.4016" x="7.0868" y="8.9328" fill="black"  height="3.4016" stroke="black" stroke-width="1.85384"/>
+    <circle fill="black" cx="8.7876"  cy="3.5464" stroke="black" id="connector0pad" r="1.7008" stroke-width="1.85384"/>
+   </g>
+  </g>
+ </g>
+ <g partID="107341">
+  <g transform="translate(137.321,128.613)">
+   <g transform="matrix(-1,0,0,-1,0,0)">
+    <g  id="copper1">
+     <circle fill="black" cx="8.7876"  cy="10.6336" stroke="black" id="connector1pad" r="1.7008" stroke-width="1.85384"/>
+     <rect width="3.4016" x="7.0868" y="8.9328" fill="black"  height="3.4016" stroke="black" stroke-width="1.85384"/>
+     <circle fill="black" cx="8.7876"  cy="3.5464" stroke="black" id="connector0pad" r="1.7008" stroke-width="1.85384"/>
+    </g>
+   </g>
+  </g>
+ </g>
+ <g partID="107321">
+  <g transform="translate(194.921,128.613)">
+   <g transform="matrix(-1,0,0,-1,0,0)">
+    <g  id="copper1">
+     <circle fill="black" cx="8.7876"  cy="10.6336" stroke="black" id="connector1pad" r="1.7008" stroke-width="1.85384"/>
+     <rect width="3.4016" x="7.0868" y="8.9328" fill="black"  height="3.4016" stroke="black" stroke-width="1.85384"/>
+     <circle fill="black" cx="8.7876"  cy="3.5464" stroke="black" id="connector0pad" r="1.7008" stroke-width="1.85384"/>
+    </g>
+   </g>
+  </g>
+ </g>
+ <g partID="107351">
+  <g transform="translate(252.521,128.613)">
+   <g transform="matrix(-1,0,0,-1,0,0)">
+    <g  id="copper1">
+     <circle fill="black" cx="8.7876"  cy="10.6336" stroke="black" id="connector1pad" r="1.7008" stroke-width="1.85384"/>
+     <rect width="3.4016" x="7.0868" y="8.9328" fill="black"  height="3.4016" stroke="black" stroke-width="1.85384"/>
+     <circle fill="black" cx="8.7876"  cy="3.5464" stroke="black" id="connector0pad" r="1.7008" stroke-width="1.85384"/>
+    </g>
+   </g>
+  </g>
+ </g>
+ <g partID="107331">
+  <g transform="translate(206.146,114.32)">
+   <g  id="copper1">
+    <circle fill="black" cx="8.7876"  cy="10.6336" stroke="black" id="connector1pad" r="1.7008" stroke-width="1.85384"/>
+    <rect width="3.4016" x="7.0868" y="8.9328" fill="black"  height="3.4016" stroke="black" stroke-width="1.85384"/>
+    <circle fill="black" cx="8.7876"  cy="3.5464" stroke="black" id="connector0pad" r="1.7008" stroke-width="1.85384"/>
+   </g>
+  </g>
+ </g>
+ <g partID="107211">
+  <g transform="translate(148.546,78.32)">
+   <g  id="copper1">
+    <circle fill="black" cx="8.7876"  cy="10.6336" stroke="black" id="connector1pad" r="1.7008" stroke-width="1.85384"/>
+    <rect width="3.4016" x="7.0868" y="8.9328" fill="black"  height="3.4016" stroke="black" stroke-width="1.85384"/>
+    <circle fill="black" cx="8.7876"  cy="3.5464" stroke="black" id="connector0pad" r="1.7008" stroke-width="1.85384"/>
+   </g>
+  </g>
+ </g>
+ <g partID="107301">
+  <g transform="translate(90.946,114.32)">
+   <g  id="copper1">
+    <circle fill="black" cx="8.7876"  cy="10.6336" stroke="black" id="connector1pad" r="1.7008" stroke-width="1.85384"/>
+    <rect width="3.4016" x="7.0868" y="8.9328" fill="black"  height="3.4016" stroke="black" stroke-width="1.85384"/>
+    <circle fill="black" cx="8.7876"  cy="3.5464" stroke="black" id="connector0pad" r="1.7008" stroke-width="1.85384"/>
+   </g>
+  </g>
+ </g>
+ <g partID="107111">
+  <g transform="translate(194.921,56.6128)">
+   <g transform="matrix(-1,0,0,-1,0,0)">
+    <g  id="copper1">
+     <circle fill="black" cx="8.7876"  cy="10.6336" stroke="black" id="connector1pad" r="1.7008" stroke-width="1.85384"/>
+     <rect width="3.4016" x="7.0868" y="8.9328" fill="black"  height="3.4016" stroke="black" stroke-width="1.85384"/>
+     <circle fill="black" cx="8.7876"  cy="3.5464" stroke="black" id="connector0pad" r="1.7008" stroke-width="1.85384"/>
+    </g>
+   </g>
+  </g>
+ </g>
+ <g partID="107101">
+  <g transform="translate(148.546,42.32)">
+   <g  id="copper1">
+    <circle fill="black" cx="8.7876"  cy="10.6336" stroke="black" id="connector1pad" r="1.7008" stroke-width="1.85384"/>
+    <rect width="3.4016" x="7.0868" y="8.9328" fill="black"  height="3.4016" stroke="black" stroke-width="1.85384"/>
+    <circle fill="black" cx="8.7876"  cy="3.5464" stroke="black" id="connector0pad" r="1.7008" stroke-width="1.85384"/>
+   </g>
+  </g>
+ </g>
+ <g partID="106841">
+  <g transform="translate(90.946,42.32)">
+   <g  id="copper1">
+    <circle fill="black" cx="8.7876"  cy="10.6336" stroke="black" id="connector1pad" r="1.7008" stroke-width="1.85384"/>
+    <rect width="3.4016" x="7.0868" y="8.9328" fill="black"  height="3.4016" stroke="black" stroke-width="1.85384"/>
+    <circle fill="black" cx="8.7876"  cy="3.5464" stroke="black" id="connector0pad" r="1.7008" stroke-width="1.85384"/>
+   </g>
+  </g>
+ </g>
+ <g partID="107081">
+  <g transform="translate(137.321,56.6128)">
+   <g transform="matrix(-1,0,0,-1,0,0)">
+    <g  id="copper1">
+     <circle fill="black" cx="8.7876"  cy="10.6336" stroke="black" id="connector1pad" r="1.7008" stroke-width="1.85384"/>
+     <rect width="3.4016" x="7.0868" y="8.9328" fill="black"  height="3.4016" stroke="black" stroke-width="1.85384"/>
+     <circle fill="black" cx="8.7876"  cy="3.5464" stroke="black" id="connector0pad" r="1.7008" stroke-width="1.85384"/>
+    </g>
+   </g>
+  </g>
+ </g>
+ <g partID="107201">
+  <g transform="translate(90.946,78.32)">
+   <g  id="copper1">
+    <circle fill="black" cx="8.7876"  cy="10.6336" stroke="black" id="connector1pad" r="1.7008" stroke-width="1.85384"/>
+    <rect width="3.4016" x="7.0868" y="8.9328" fill="black"  height="3.4016" stroke="black" stroke-width="1.85384"/>
+    <circle fill="black" cx="8.7876"  cy="3.5464" stroke="black" id="connector0pad" r="1.7008" stroke-width="1.85384"/>
+   </g>
+  </g>
+ </g>
+ <g partID="107191">
+  <g transform="translate(194.921,92.6128)">
+   <g transform="matrix(-1,0,0,-1,0,0)">
+    <g  id="copper1">
+     <circle fill="black" cx="8.7876"  cy="10.6336" stroke="black" id="connector1pad" r="1.7008" stroke-width="1.85384"/>
+     <rect width="3.4016" x="7.0868" y="8.9328" fill="black"  height="3.4016" stroke="black" stroke-width="1.85384"/>
+     <circle fill="black" cx="8.7876"  cy="3.5464" stroke="black" id="connector0pad" r="1.7008" stroke-width="1.85384"/>
+    </g>
+   </g>
+  </g>
+ </g>
+ <g partID="107181">
+  <g transform="translate(137.321,92.6128)">
+   <g transform="matrix(-1,0,0,-1,0,0)">
+    <g  id="copper1">
+     <circle fill="black" cx="8.7876"  cy="10.6336" stroke="black" id="connector1pad" r="1.7008" stroke-width="1.85384"/>
+     <rect width="3.4016" x="7.0868" y="8.9328" fill="black"  height="3.4016" stroke="black" stroke-width="1.85384"/>
+     <circle fill="black" cx="8.7876"  cy="3.5464" stroke="black" id="connector0pad" r="1.7008" stroke-width="1.85384"/>
+    </g>
+   </g>
+  </g>
+ </g>
+ <g partID="107151">
+  <g transform="translate(252.521,56.6128)">
+   <g transform="matrix(-1,0,0,-1,0,0)">
+    <g  id="copper1">
+     <circle fill="black" cx="8.7876"  cy="10.6336" stroke="black" id="connector1pad" r="1.7008" stroke-width="1.85384"/>
+     <rect width="3.4016" x="7.0868" y="8.9328" fill="black"  height="3.4016" stroke="black" stroke-width="1.85384"/>
+     <circle fill="black" cx="8.7876"  cy="3.5464" stroke="black" id="connector0pad" r="1.7008" stroke-width="1.85384"/>
+    </g>
+   </g>
+  </g>
+ </g>
+ <g partID="107141">
+  <g transform="translate(206.146,42.32)">
+   <g  id="copper1">
+    <circle fill="black" cx="8.7876"  cy="10.6336" stroke="black" id="connector1pad" r="1.7008" stroke-width="1.85384"/>
+    <rect width="3.4016" x="7.0868" y="8.9328" fill="black"  height="3.4016" stroke="black" stroke-width="1.85384"/>
+    <circle fill="black" cx="8.7876"  cy="3.5464" stroke="black" id="connector0pad" r="1.7008" stroke-width="1.85384"/>
+   </g>
+  </g>
+ </g>
+ <g partID="108161">
+  <g transform="translate(38.0296,64.7664)">
+   <g transform="matrix(0,1,-1,0,0,0)">
+    <g  id="copper1">
+     <rect width="3.96" x="0.72" y="1.116" fill="black"  height="3.96" stroke="black" stroke-width="2.16"/>
+     <circle fill="black" cx="2.7"  cy="3.096" stroke="black" r="1.98" id="connector0pin" stroke-width="2.16"/>
+     <circle fill="black" cx="31.5"  cy="3.096" stroke="black" r="1.98" id="connector1pin" stroke-width="2.16"/>
+    </g>
+   </g>
+  </g>
+ </g>
+ <g partID="107561">
+  <g transform="translate(30.8296,64.7664)">
+   <g transform="matrix(0,1,-1,0,0,0)">
+    <g  id="copper1">
+     <rect width="3.96" x="0.72" y="1.116" fill="black"  height="3.96" stroke="black" stroke-width="2.16"/>
+     <circle fill="black" cx="2.7"  cy="3.096" stroke="black" r="1.98" id="connector0pin" stroke-width="2.16"/>
+     <circle fill="black" cx="31.5"  cy="3.096" stroke="black" r="1.98" id="connector1pin" stroke-width="2.16"/>
+    </g>
+   </g>
+  </g>
+ </g>
+ <g partID="107581">
+  <g transform="translate(23.6296,64.7664)">
+   <g transform="matrix(0,1,-1,0,0,0)">
+    <g  id="copper1">
+     <rect width="3.96" x="0.72" y="1.116" fill="black"  height="3.96" stroke="black" stroke-width="2.16"/>
+     <circle fill="black" cx="2.7"  cy="3.096" stroke="black" r="1.98" id="connector0pin" stroke-width="2.16"/>
+     <circle fill="black" cx="31.5"  cy="3.096" stroke="black" r="1.98" id="connector1pin" stroke-width="2.16"/>
+    </g>
+   </g>
+  </g>
+ </g>
+ <g partID="161021">
+  <g transform="translate(16.4296,64.7664)">
+   <g transform="matrix(0,1,-1,0,0,0)">
+    <g  id="copper1">
+     <rect width="3.96" x="0.72" y="1.116" fill="black"  height="3.96" stroke="black" stroke-width="2.16"/>
+     <circle fill="black" cx="2.7"  cy="3.096" stroke="black" r="1.98" id="connector0pin" stroke-width="2.16"/>
+     <circle fill="black" cx="31.5"  cy="3.096" stroke="black" r="1.98" id="connector1pin" stroke-width="2.16"/>
+    </g>
+   </g>
+  </g>
+ </g>
+ <g partID="309301">
+  <g transform="translate(63.143,7.6496)">
+   <g  id="copper1">
+    <g  id="copper0">
+     <circle fill="black" cx="2.484"  cy="2.484" stroke="black" id="connector0pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="9.684"  cy="2.484" stroke="black" id="connector1pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="16.884"  cy="2.484" stroke="black" id="connector2pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="24.084"  cy="2.484" stroke="black" id="connector3pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="31.284"  cy="2.484" stroke="black" id="connector4pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="38.484"  cy="2.484" stroke="black" id="connector5pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="45.684"  cy="2.484" stroke="black" id="connector6pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="52.884"  cy="2.484" stroke="black" id="connector7pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="65.124"  cy="2.484" stroke="black" id="connector8pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="72.324"  cy="2.484" stroke="black" id="connector9pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="79.524"  cy="2.484" stroke="black" id="connector10pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="86.724"  cy="2.484" stroke="black" id="connector11pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="93.924"  cy="2.484" stroke="black" id="connector12pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="101.124"  cy="2.484" stroke="black" id="connector13pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="108.324"  cy="2.484" stroke="black" id="connector14pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="115.524"  cy="2.484" stroke="black" id="connector15pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="29.124"  cy="139.284" stroke="black" id="connector16pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="36.324"  cy="139.284" stroke="black" id="connector17pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="43.524"  cy="139.284" stroke="black" id="connector18pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="50.724"  cy="139.284" stroke="black" id="connector19pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="57.924"  cy="139.284" stroke="black" id="connector20pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="65.124"  cy="139.284" stroke="black" id="connector21pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="79.524"  cy="139.284" stroke="black" id="connector22pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="86.724"  cy="139.284" stroke="black" id="connector23pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="93.924"  cy="139.284" stroke="black" id="connector24pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="101.124"  cy="139.284" stroke="black" id="connector25pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="108.324"  cy="139.284" stroke="black" id="connector26pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="115.524"  cy="139.284" stroke="black" id="connector27pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="129.924"  cy="2.484" stroke="black" id="connector28pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="137.124"  cy="2.484" stroke="black" id="connector29pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="144.324"  cy="2.484" stroke="black" id="connector30pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="151.524"  cy="2.484" stroke="black" id="connector31pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="158.724"  cy="2.484" stroke="black" id="connector32pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="165.924"  cy="2.484" stroke="black" id="connector33pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="173.124"  cy="2.484" stroke="black" id="connector34pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="180.324"  cy="2.484" stroke="black" id="connector35pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="122.724"  cy="139.284" stroke="black" id="connector70pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="129.924"  cy="139.284" stroke="black" id="connector71pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="144.324"  cy="139.284" stroke="black" id="connector72pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="151.524"  cy="139.284" stroke="black" id="connector73pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="158.724"  cy="139.284" stroke="black" id="connector74pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="165.924"  cy="139.284" stroke="black" id="connector75pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="173.124"  cy="139.284" stroke="black" id="connector76pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="180.324"  cy="139.284" stroke="black" id="connector77pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="187.524"  cy="139.284" stroke="black" id="connector78pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="194.724"  cy="139.284" stroke="black" id="connector79pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="201.924"  cy="2.484" stroke="black" id="connector80pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="209.124"  cy="2.484" stroke="black" id="connector81pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="201.924"  cy="9.684" stroke="black" id="connector36pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="209.124"  cy="9.684" stroke="black" id="connector37pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="201.924"  cy="16.884" stroke="black" id="connector38pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="209.124"  cy="16.884" stroke="black" id="connector39pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="201.924"  cy="24.084" stroke="black" id="connector40pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="209.124"  cy="24.084" stroke="black" id="connector41pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="201.924"  cy="31.284" stroke="black" id="connector42pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="209.124"  cy="31.284" stroke="black" id="connector43pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="201.924"  cy="38.484" stroke="black" id="connector44pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="209.124"  cy="38.484" stroke="black" id="connector45pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="201.924"  cy="45.684" stroke="black" id="connector46pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="209.124"  cy="45.684" stroke="black" id="connector47pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="201.924"  cy="52.884" stroke="black" id="connector48pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="209.124"  cy="52.884" stroke="black" id="connector49pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="201.924"  cy="60.084" stroke="black" id="connector50pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="209.124"  cy="60.084" stroke="black" id="connector51pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="201.924"  cy="67.284" stroke="black" id="connector52pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="209.124"  cy="67.284" stroke="black" id="connector53pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="201.924"  cy="74.484" stroke="black" id="connector54pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="209.124"  cy="74.484" stroke="black" id="connector55pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="201.924"  cy="81.684" stroke="black" id="connector56pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="209.124"  cy="81.684" stroke="black" id="connector57pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="201.924"  cy="88.884" stroke="black" id="connector58pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="209.124"  cy="88.884" stroke="black" id="connector59pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="201.924"  cy="96.084" stroke="black" id="connector60pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="209.124"  cy="96.084" stroke="black" id="connector61pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="201.924"  cy="103.284" stroke="black" id="connector62pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="209.124"  cy="103.284" stroke="black" id="connector63pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="201.924"  cy="110.484" stroke="black" id="connector64pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="209.124"  cy="110.484" stroke="black" id="connector65pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="201.924"  cy="117.684" stroke="black" id="connector66pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="209.124"  cy="117.684" stroke="black" id="connector67pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="201.924"  cy="124.884" stroke="black" id="connector68pin" r="1.98" stroke-width="2.16"/>
+     <circle fill="black" cx="209.124"  cy="124.884" stroke="black" id="connector69pin" r="1.98" stroke-width="2.16"/>
+    </g>
+   </g>
+  </g>
+ </g>
+</svg>
