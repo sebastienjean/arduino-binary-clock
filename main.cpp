@@ -55,12 +55,12 @@
 /**
  * Hours, with initial value
  */
-unsigned char hours = 15;
+unsigned char hours = 12;
 
 /**
  * Minutes, with initial value
  */
-unsigned char minutes = 46;
+unsigned char minutes = 0;
 
 /**
  * Seconds, with initial value
@@ -129,19 +129,19 @@ resetAllLEDS()
 void
 displayTime()
 {
-  // displays each bit using time mask
+  /* displays each bit using time mask */
   for (int i = 0; i < 18; i++)
+  {
+    if (bitRead(timeMask,17-i))
     {
-      if (bitRead(timeMask,17-i))
-        {
-          pinMode(ledPins[i][0], OUTPUT);
-          digitalWrite(ledPins[i][0], HIGH);
-          pinMode(ledPins[i][1], OUTPUT);
-          digitalWrite(ledPins[i][1], LOW);
-        }
-      delayMicroseconds(DELAY_MICROS);
-      resetAllLEDS();
+      pinMode(ledPins[i][0], OUTPUT);
+      digitalWrite(ledPins[i][0], HIGH);
+      pinMode(ledPins[i][1], OUTPUT);
+      digitalWrite(ledPins[i][1], LOW);
     }
+    delayMicroseconds(DELAY_MICROS);
+    resetAllLEDS();
+  }
 }
 
 /**
@@ -153,9 +153,9 @@ incrementHours()
   hours++;
 
   if (hours == 24)
-    {
-      hours = 0;
-    }
+  {
+    hours = 0;
+  }
 }
 
 /**
@@ -167,10 +167,10 @@ incrementMinutes()
   minutes++;
 
   if (minutes == 60)
-    {
-      minutes = 0;
-      incrementHours();
-    }
+  {
+    minutes = 0;
+    incrementHours();
+  }
 }
 
 /**
@@ -182,10 +182,10 @@ incrementSeconds()
   seconds++;
 
   if (seconds == 60)
-    {
-      seconds = 0;
-      incrementMinutes();
-    }
+  {
+    seconds = 0;
+    incrementMinutes();
+  }
 }
 
 /**
@@ -201,22 +201,20 @@ updateTimeMask()
 /**
  * Displays time for one second, then increments seconds
  */
-void
-displayNextSecond()
+void displayNextSecond()
 {
-  while (1)
+ while (1)
+ {
+    displayTime();
+    endOfSecondMillis = millis();
+    if (((endOfSecondMillis-startOfSecondMillis) > MILLIS_THRESHOLD)||(startOfSecondMillis > endOfSecondMillis))
     {
-      displayTime();
-      endOfSecondMillis = millis();
-      if (((endOfSecondMillis - startOfSecondMillis) > MILLIS_THRESHOLD)
-          || (startOfSecondMillis > endOfSecondMillis))
-        {
-          incrementSeconds();
-          updateTimeMask();
-          startOfSecondMillis = endOfSecondMillis;
-          break;
-        }
+      incrementSeconds();
+      updateTimeMask();
+      startOfSecondMillis = endOfSecondMillis;
+      break;
     }
+ }
 }
 
 /**
@@ -225,7 +223,19 @@ displayNextSecond()
 void
 setup()
 {
+  /* power-on self test: sequentially making each LED blinking */
   resetAllLEDS();
+  for (int i = 0; i < 18; i++)
+  {
+    pinMode(ledPins[i][0], OUTPUT);
+    digitalWrite(ledPins[i][0], HIGH);
+    pinMode(ledPins[i][1], OUTPUT);
+    digitalWrite(ledPins[i][1], LOW);
+    delay(25);
+    resetAllLEDS();
+  }
+
+  /* Starting clock */
   updateTimeMask();
   startOfSecondMillis = millis();
 }
