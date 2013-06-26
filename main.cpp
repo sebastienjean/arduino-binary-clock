@@ -47,7 +47,16 @@
  * the timing accuracy of the Arduino being used.
  *
  */
-#define MILLIS_THRESHOLD 1020
+#define SECOND_THRESHOLD_MILLIS 1020
+
+/**
+ * Advance taken by the clock every hour, in milliseconds.
+ *
+ * This value has been defined empirically and has to be tuned according to
+ * the timing accuracy of the Arduino being used.
+ *
+ */
+#define ADVANCE_PER_HOUR_MILLIS 1600
 
 /**
  * Microseconds delay during which each LED is turned on.
@@ -155,11 +164,13 @@ displayTime()
 void
 incrementHours()
 {
-  hours++;
+  delay(ADVANCE_PER_HOUR_MILLIS);
+
+  hours ++;
 
   if (hours == 24)
   {
-    hours = 0;
+     hours = 0;
   }
 }
 
@@ -213,7 +224,7 @@ displayNextSecond()
  {
     displayTime();
     endOfSecondMillis = millis();
-    if (((endOfSecondMillis-startOfSecondMillis) > MILLIS_THRESHOLD)||(startOfSecondMillis > endOfSecondMillis))
+    if (((endOfSecondMillis-startOfSecondMillis) > SECOND_THRESHOLD_MILLIS)||(startOfSecondMillis > endOfSecondMillis))
     {
       incrementSeconds();
       updateTimeMask();
