@@ -41,39 +41,44 @@
 #define CHARLIE_5 6 
 
 /**
- * Milliseconds threshold to trigger a second increment
+ * Milliseconds threshold to trigger a second increment.
+ *
+ * This value has been defined empirically and has to be tuned according to
+ * the timing accuracy of the Arduino being used.
+ *
  */
 #define MILLIS_THRESHOLD 1020
 
 /**
- * Microseconds delay during which each LED is turned on
+ * Microseconds delay during which each LED is turned on.
  * Using POV and a refresh rate of at least 25Hz of the whole LED matrix,
- * a complete image can be displayed without flickering
+ * a complete image can be displayed without flickering.
+ * Here, each of the 18 LED is lit for 0.5ms every 9ms, for a refresh rate of 110 Hz.
  */
-#define DELAY_MICROS 500
+#define LED_ON_DELAY_MICROS 500
 
 /**
- * Hours, with initial value
+ * Hours, with initial value.
  */
 unsigned char hours = 12;
 
 /**
- * Minutes, with initial value
+ * Minutes, with initial value.
  */
 unsigned char minutes = 0;
 
 /**
- * Seconds, with initial value
+ * Seconds, with initial value.
  */
 unsigned char seconds = 0;
 
 /**
- * 18 bits time mask (0b000000hhhhhhmmmmmmssssss) used to refresh LED matrix
+ * 18 bits time mask (0b000000hhhhhhmmmmmmssssss) used to refresh the LED matrix.
  */
 unsigned long timeMask = 0;
 
 /**
- * Relative time of start of second (used to trigger second increment)
+ * Relative time of start of the last second (used to trigger second increment)
  */
 unsigned long startOfSecondMillis;
 
@@ -83,35 +88,35 @@ unsigned long startOfSecondMillis;
 unsigned long endOfSecondMillis;
 
 /**
- * Charlieplexing pins / LED table
+ * Charlieplexing pins / LED table.
  * row 0 represents hours MSB (upper left LED)
  * row 17 represents seconds LSB (lower right LED)
  * current flows across each LED from pin in column 1 (HIGH) to pin in column 0 (LOW)
  */
 unsigned int ledPins[18][2] =
   {
-    { CHARLIE_1, CHARLIE_2 },
-    { CHARLIE_2, CHARLIE_1 },
-    { CHARLIE_2, CHARLIE_3 },
-    { CHARLIE_3, CHARLIE_2 },
-    { CHARLIE_1, CHARLIE_3 },
-    { CHARLIE_3, CHARLIE_1 },
-    { CHARLIE_3, CHARLIE_4 },
-    { CHARLIE_4, CHARLIE_3 },
-    { CHARLIE_4, CHARLIE_5 },
-    { CHARLIE_5, CHARLIE_4 },
-    { CHARLIE_3, CHARLIE_5 },
-    { CHARLIE_5, CHARLIE_3 },
-    { CHARLIE_1, CHARLIE_5 },
-    { CHARLIE_5, CHARLIE_1 },
-    { CHARLIE_2, CHARLIE_5 },
-    { CHARLIE_5, CHARLIE_2 },
-    { CHARLIE_1, CHARLIE_4 },
-    { CHARLIE_4, CHARLIE_1 } };
+    { CHARLIE_1, CHARLIE_2 },   // LED1 (hours MSB)
+    { CHARLIE_2, CHARLIE_1 },   // LED2
+    { CHARLIE_2, CHARLIE_3 },   // LED3
+    { CHARLIE_3, CHARLIE_2 },   // LED4
+    { CHARLIE_1, CHARLIE_3 },   // LED5
+    { CHARLIE_3, CHARLIE_1 },   // LED6 (hours LSB)
+    { CHARLIE_3, CHARLIE_4 },   // LED7 (minutes MSB)
+    { CHARLIE_4, CHARLIE_3 },   // LED8
+    { CHARLIE_4, CHARLIE_5 },   // LED9
+    { CHARLIE_5, CHARLIE_4 },   // LED10
+    { CHARLIE_3, CHARLIE_5 },   // LED11
+    { CHARLIE_5, CHARLIE_3 },   // LED12 (minutes LSB)
+    { CHARLIE_1, CHARLIE_5 },   // LED13 (seconds MSB)
+    { CHARLIE_5, CHARLIE_1 },   // LED14
+    { CHARLIE_2, CHARLIE_5 },   // LED15
+    { CHARLIE_5, CHARLIE_2 },   // LED16
+    { CHARLIE_1, CHARLIE_4 },   // LED17
+    { CHARLIE_4, CHARLIE_1 } }; // LED18 (seconds LSB)
 
 /**
- * Resets (turns off) LED matrix
- * (setting all charlieplexing pins to INPUT, causes LED matrix to be enterely off)
+ * Resets (turns off) LED matrix.
+ * (setting all charlieplexing pins to INPUT causes LED matrix to be entirely off)
  */
 void
 resetAllLEDS()
@@ -124,7 +129,7 @@ resetAllLEDS()
 }
 
 /**
- * Displays time on LED matrix
+ * Displays time on the LED matrix.
  */
 void
 displayTime()
@@ -139,13 +144,13 @@ displayTime()
       pinMode(ledPins[i][1], OUTPUT);
       digitalWrite(ledPins[i][1], LOW);
     }
-    delayMicroseconds(DELAY_MICROS);
+    delayMicroseconds(LED_ON_DELAY_MICROS);
     resetAllLEDS();
   }
 }
 
 /**
- * Increments hours, with modulus
+ * Increments hours, with modulus.
  */
 void
 incrementHours()
@@ -159,7 +164,7 @@ incrementHours()
 }
 
 /**
- * Increments minutes, with modulus and hours propagation
+ * Increments minutes, with modulus and hours propagation.
  */
 void
 incrementMinutes()
@@ -174,7 +179,7 @@ incrementMinutes()
 }
 
 /**
- * Increments seconds, with modulus and minutes propagation
+ * Increments seconds, with modulus and minutes propagation.
  */
 void
 incrementSeconds()
@@ -189,7 +194,7 @@ incrementSeconds()
 }
 
 /**
- * Updates time mask when time changes
+ * Updates time mask when time changes.
  */
 void
 updateTimeMask()
@@ -199,9 +204,10 @@ updateTimeMask()
 }
 
 /**
- * Displays time for one second, then increments seconds
+ * Displays time for one second, then increments seconds.
  */
-void displayNextSecond()
+void
+displayNextSecond()
 {
  while (1)
  {
@@ -218,7 +224,7 @@ void displayNextSecond()
 }
 
 /**
- * Arduino's setup function, called once at startup, after init
+ * Arduino's setup function, called once at startup, after reset.
  */
 void
 setup()
