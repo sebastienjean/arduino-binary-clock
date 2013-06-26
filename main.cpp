@@ -16,6 +16,11 @@
 #include <Arduino.h>
 
 /**
+ * Amount of LEDs.
+ */
+#define LED_AMOUNT 18
+
+/**
  * Charlieplexing pin 1
  */
 #define CHARLIE_1 2
@@ -59,12 +64,17 @@
 #define ADVANCE_PER_HOUR_MILLIS 1600
 
 /**
- * Microseconds delay during which each LED is turned on.
+ * Microseconds delay during which each LED is turned on during time display.
  * Using POV and a refresh rate of at least 25Hz of the whole LED matrix,
  * a complete image can be displayed without flickering.
  * Here, each of the 18 LED is lit for 0.5ms every 9ms, for a refresh rate of 110 Hz.
  */
 #define LED_ON_DELAY_MICROS 500
+
+/**
+ * Milliseconds delay during which each LED is turned on during powerOn-test.
+ */
+#define SELF_TEST_LED_ON_DELAY_MILLIS 50
 
 /**
  * Hours, with initial value.
@@ -102,7 +112,7 @@ unsigned long endOfSecondMillis;
  * row 17 represents seconds LSB (lower right LED)
  * current flows across each LED from pin in column 1 (HIGH) to pin in column 0 (LOW)
  */
-unsigned int ledPins[18][2] =
+unsigned int ledPins[LED_AMOUNT][2] =
   {
     { CHARLIE_1, CHARLIE_2 },   // LED1 (hours MSB)
     { CHARLIE_2, CHARLIE_1 },   // LED2
@@ -128,7 +138,7 @@ unsigned int ledPins[18][2] =
  * (setting all charlieplexing pins to INPUT causes LED matrix to be entirely off)
  */
 void
-resetAllLEDS()
+resetAllLEDs()
 {
   pinMode(CHARLIE_1, INPUT);
   pinMode(CHARLIE_2, INPUT);
@@ -138,23 +148,34 @@ resetAllLEDS()
 }
 
 /**
+ * Turns on a single LED.
+ * @param led the number of the LED to turn on (in [1, LED_AMOUNT])
+ */
+void turnOnLED(unsigned char led)
+{
+  if (led >= LED_AMOUNT)
+    return;
+  pinMode(ledPins[led][0], OUTPUT);
+  digitalWrite(ledPins[led][0], HIGH);
+  pinMode(ledPins[led][1], OUTPUT);
+  digitalWrite(ledPins[led][1], LOW);
+}
+
+/**
  * Displays time on the LED matrix.
  */
 void
 displayTime()
 {
   /* displays each bit using time mask */
-  for (int i = 0; i < 18; i++)
+  for (int i = 0; i < LED_AMOUNT; i++)
   {
-    if (bitRead(timeMask,17-i))
+    if (bitRead(timeMask,(LED_AMOUNT-1)-i))
     {
-      pinMode(ledPins[i][0], OUTPUT);
-      digitalWrite(ledPins[i][0], HIGH);
-      pinMode(ledPins[i][1], OUTPUT);
-      digitalWrite(ledPins[i][1], LOW);
+      turnOnLED(i);
     }
     delayMicroseconds(LED_ON_DELAY_MICROS);
-    resetAllLEDS();
+    resetAllLEDs();
   }
 }
 
@@ -235,24 +256,28 @@ displayNextSecond()
 }
 
 /**
+ * Sequentially making each LED blinking to detect defective ones
+ */
+void
+powerOnLEDsTest()
+{
+  for (int i = 0; i < LED_AMOUNT; i++)
+  {
+    resetAllLEDs();
+    turnOnLED(i);
+    delay(SELF_TEST_LED_ON_DELAY_MILLIS);
+  }
+}
+
+/**
  * Arduino's setup function, called once at startup, after reset.
  */
 void
 setup()
 {
-  /* power-on self test: sequentially making each LED blinking */
-  resetAllLEDS();
-  for (int i = 0; i < 18; i++)
-  {
-    pinMode(ledPins[i][0], OUTPUT);
-    digitalWrite(ledPins[i][0], HIGH);
-    pinMode(ledPins[i][1], OUTPUT);
-    digitalWrite(ledPins[i][1], LOW);
-    delay(25);
-    resetAllLEDS();
-  }
+  powerOnLEDsTest();
+  resetAllLEDs();
 
-  /* Starting clock */
   updateTimeMask();
   startOfSecondMillis = millis();
 }
